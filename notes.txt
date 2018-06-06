@@ -1,3 +1,6 @@
 DOM-Document Object Model:
 document Object is the root of all the elements in html.if you want to access elements in html page you need to access with document Object
 eg:document.body.innerHTML = "Some text";
+
+The getElementsByClassName() method finds all elements by class name and returns them as an array
+Similarly, the getElementsByTagName method returns all of the elements of the specified tag name as an array
