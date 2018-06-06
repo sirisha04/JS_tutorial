@@ -1,0 +1,30 @@
+CSS stands for Cascading Style Sheets.
+
+- Cascading refers to the way CSS applies one style on top of another.
+- Style Sheets control the look and feel of web documents.
+
+CSS allows you to apply specific styles to specific HTML elements.
+
+The main benefit of CSS is that it allows you to separate style from content
+All formatting can (and should) be removed from the HTML document and stored in a separate CSS file
+Inline CSS:
+In order to use an inline style, add the style attribute to the relevant tag. 
+<p style="color:white; background-color:gray;">
+    This is an example of inline styling. 
+</p>
+Embedded/Internal CSS:
+Internal styles are defined within the <style> element, inside the head section of an HTML page
+<html>
+   <head>
+      <style>
+      p {
+         color:white;
+         background-color:gray;
+      }
+      </style>
+   </head>
+   <body>
+      <p>This is my first paragraph. </p>
+      <p>This is my second paragraph. </p>
+   </body>
+</html>
