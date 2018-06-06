@@ -1,0 +1,3 @@
+DOM-Document Object Model:
+document Object is the root of all the elements in html.if you want to access elements in html page you need to access with document Object
+eg:document.body.innerHTML = "Some text";
