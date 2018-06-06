@@ -28,3 +28,52 @@ Internal styles are defined within the <style> element, inside the head section 
       <p>This is my second paragraph. </p>
    </body>
 </html>
+
+External CSS
+
+With this method, all styling rules are contained in a single text file, which is saved with the .css extension. 
+
+This CSS file is then referenced in the HTML using the <link> tag. The <link> element goes inside the head section
+<head>
+   <link rel="stylesheet" href="example.css">
+</head>
+<body>
+   <p>This is my first paragraph.</p>
+   <p>This is my second paragraph. </p>
+   <p>This is my third paragraph. </p>
+</body>
+
+A style rule has three parts: selector, property, and value. 
+eg: h1 {color:orange;} -- this is a type selector
+
+Selectors::----
+
+To select an element with a specific id, use a hash character, and then follow it with the id of the element
+The HTML: 
+<div id="intro">
+   <p> This paragraph is in the intro section.</p>
+</div>
+<p> This paragraph is not in the intro section.</p>
+
+The CSS: 
+#intro {
+   color: white;
+   background-color: gray;
+}
+
+Class selectors work in a similar way. The major difference is that IDs can only be applied once per page, while classes can be used as many times on a page as needed. 
+
+In the example below, both paragraphs having the class "first" will be affected by the CSS: 
+
+The HTML: 
+<div>
+   <p class="first">This is a paragraph</p>
+   <p> This is the second paragraph. </p>
+</div>
+<p class="first"> This is not in the intro section</p>
+<p> The second paragraph is not in the intro section. </p>
+
+The CSS: 
+.first {font-size: 200%;}
+To select elements with a specific class, use a period character, followed by the name of the class.
+
