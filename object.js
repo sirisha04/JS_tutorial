@@ -32,3 +32,9 @@ document.write(JackHeight);
 //accesing object's method
 var agemodified = jack.changeAge(29);
 document.write(agemodified);// returns changed age
+
+function myAlert(){
+    alert("alert for every 3 seconds");
+}
+
+setInterval(myAlert,3000); //setInterval
