@@ -77,3 +77,23 @@ The CSS:
 .first {font-size: 200%;}
 To select elements with a specific class, use a period character, followed by the name of the class.
 
+Descendant Selectors
+
+These selectors are used to select elements that are descendants of another element. When selecting levels, you can select as many levels deep as you need to. 
+
+For example, to target only <em> elements in the first paragraph of the "intro" section:
+
+The HTML: 
+<div id="intro">
+   <p class="first">This is a <em> paragraph.</em></p>
+   <p> This is the second paragraph. </p>
+</div>
+<p class="first"> This is not in the intro section.</p>
+<p> The second paragraph is not in the intro section. </p>
+
+The CSS: 
+#intro .first em {
+   color: pink; 
+   background-color:gray;
+}
+
