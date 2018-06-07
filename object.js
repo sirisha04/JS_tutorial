@@ -37,4 +37,4 @@ function myAlert(){
     alert("alert for every 3 seconds");
 }
 
-setInterval(myAlert,3000); //setInterval
+//setInterval(myAlert,3000); //setInterval

@@ -97,3 +97,28 @@ The CSS:
    background-color:gray;
 }
 
+Working with Text:
+------------------
+font-family has two properties:
+font-family : Specific font property like Arial,Times New Roman etc
+Generic-family:Serif,Sans-serif,Monospace
+p 
+ {
+    font-family : Arial,"Times New Roman",serif;
+}
+
+font-size:
+p {
+   font-size: 15pz;
+}
+
+font-style:
+p{
+    font-style:italic/oblique/normal;
+}
+
+font-weight:
+The font-weight controls the boldness or thickness of the text
+p{
+    font-weight:bold/bolder/lighter/"any value from 100 to 900";
+}
