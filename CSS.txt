@@ -97,7 +97,7 @@ The CSS:
    background-color:gray;
 }
 
-Working with Text:
+Working with Text properties:
 ------------------
 font-family has two properties:
 font-family : Specific font property like Arial,Times New Roman etc
@@ -121,4 +121,50 @@ font-weight:
 The font-weight controls the boldness or thickness of the text
 p{
     font-weight:bold/bolder/lighter/"any value from 100 to 900";
+}
+
+Font-variant:
+The CSS font-variant property allows you to convert your font to all small caps. The values can be set as 
+normal, small-caps, and inherit
+p{
+    font-variant:small-caps/normal/inherit;
+}
+
+Color property:
+p{
+    color:red;
+}
+colort properties are assigned with red ,green or blue(RGB)
+colors can also be defined in hexadecimal values i.e., # to 6 & 0-F
+
+text-align Property:
+text-align property values are as follows: left, right, center, and justify. 
+p.left {
+   text-align: left/right/center/justify;
+}
+When text-align is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are 
+straight (as in magazines and newspapers).
+
+The vertical-align Property :
+The vertical-align property sets an element's vertical alignment. Commonly used values are top, middle, and bottom.
+p{
+    vertical-align:top/bottom/middle;
+}
+The vertical-align property also takes the following values: baseline, sub, super, % and px (or pt, cm). 
+The HTML: 
+<div class="main">
+   <div class="paragraph">
+   This text is aligned to the middle
+   </div>
+</div>
+
+The CSS: 
+.main {
+    height: 150px; width: 400px;
+    background-color: LightSkyBlue;
+    display: inline-table;
+}
+.paragraph {
+    display: table-cell;
+    vertical-align: middle;
 }
