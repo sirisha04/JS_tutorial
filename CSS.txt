@@ -168,3 +168,50 @@ The CSS:
     display: table-cell;
     vertical-align: middle;
 }
+
+The text-decoration Property 
+
+The text-decoration property specifies how the text will be decorated. 
+
+Commonly used values are:
+none - The default value, this defines a normal text
+inherit - Inherits this property from its parent element
+overline - Draws a horizontal line above the text
+underline - Draws a horizontal line below the text
+line-through - draws a horizontal line through the text (substitutes the HTML <s> tag)
+
+The text-indent Property :
+The text-indent property specifies how much horizontal space should be left before the beginning of the first line of the text. Property values are 
+length (px, pt, cm, em, etc.), %, and inherit
+
+The text-transform Property:
+The text-transform CSS property specifies how to capitalize an element's text. For example, it can be used to 
+make text appear with each word capitalized.
+p{
+    text-transform:capitalize;
+}
+
+The letter-spacing Property:
+The letter-spacing property specifies the space between characters in a text. The values can be set as:
+- normal defines the default style with no extra space between characters
+- length defines an extra space between characters using measurement units like px, pt, cm, mm, etc.;
+- inherit inherits the property from its parent element;
+p{
+    letter-spacing:5px;
+}
+
+The word-spacing Property:
+The word-spacing property specifies the space between words in a text. Just like the letter-spacing property, you can set the 
+word-spacing values as normal, length, and inherit. 
+p{
+    word-spacing:15px;
+}
+
+The white-space Property:
+The white-space property specifies how white-space inside an element is handled.
+The values can be set as normal, inherit, nowrap, etc. 
+The nowrap value makes the text continue on the same line until a <br> tag is encountered, and also collapses 
+all sequences of whitespace into a single whitespace.
+p{
+    white-space:normal;
+}

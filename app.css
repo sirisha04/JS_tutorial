@@ -19,10 +19,17 @@ h1{
 {
     text-align:center; 
     color: red;
+   /* text-decoration: underline;*/
+   font-size:30pt;
+    text-indent: 60px;
+    text-shadow: rgba(0,0,255,1) -1px -2px 0.5empx,grey;
+   
+    font-size: 90px;
 }
 .article{
     background-color: blueviolet;
     width: 100px;
     height: 200px;
     display: table;
+   
 }
