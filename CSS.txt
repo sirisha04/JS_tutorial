@@ -215,3 +215,119 @@ all sequences of whitespace into a single whitespace.
 p{
     white-space:normal;
 }
+
+The CSS Box Model:
+-------------------
+All HTML elements can be considered as boxes. The CSS box model represents the design and layout of the site. It consists of margins
+, borders, paddings, and the actual content. 
+The properties work in the same order: top, right, bottom, and left. 
+The image below illustrates the box model: 
+->Every element Html element is a box
+
+border property:
+The CSS border property allows you to customize the borders of HTML elements.
+In order to add a border to the element, you need to specify the size, style, and color of the border. 
+The example below shows how to add a solid green border to the paragraph.
+p{
+    border:10px solid green;
+}
+
+Border Width:
+The properties for the border can be set separately. The border-width property specifies the width
+ of the border.
+p{
+    border-width:5px;
+}
+Border Color:
+The border color of the element can be defined using a color name, RGB, or Hex values. 
+
+Border-style:
+p.none {border-style: none;}
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.hidden {border-style: hidden;}
+
+Other Properties:
+background-color
+background-image
+background-repeat
+
+The background-image:
+The background-image property sets one or several background images in an element. Let's set a 
+background-image for the <body> element.
+body {
+   background-image: url("css_logo.png");
+   background-color: #e9e9e9;
+}
+The background-attachment Property:
+The background-attachment property sets whether a background image is fixed or scrolls with the rest of the page.
+Even if an element has a scrolling mechanism, a "fixed" background doesn't move with the element
+
+body {
+   background-image: url("css_logo.png");
+   background-repeat: no-repeat;
+   background-attachment: fixed/inherit/scroll;
+}
+
+The list-style-type Property :
+The CSS list properties allow us to set different list item markers. In HTML, there are two types of lists:
+unordered lists (<ul>) - the list items are marked with bullets
+ordered lists (<ol>) - the list items are marked with numbers or letters
+With CSS, lists can be styled further, and images can be used as the list item marker.
+One of the ways is to use the list-style-type property, which can be set to circle, square, decimal, disc, lower-alpha, etc. 
+ol.lower-alpha {
+   list-style-type: lower-alpha;
+}
+ul.circle {
+   list-style-type: circle;
+}
+ul.square {
+   list-style-type: square;
+}
+
+The List Image and Position:
+There are also other list properties, such as:
+list-style-image - specifies an image to be used as the list item marker.
+list-style-position - specifies the position of the marker box (inside, outside).
+The HTML:
+<p>The following list has list-style-position: <strong>inside</strong>.</p>
+<ul>
+   <li>Red</li>
+   <li>Green</li>
+   <li>Blue</li>
+</ul>
+
+The CSS:
+ul {
+   list-style-image: url("logo.jpg");
+   list-style-position: inside;
+}
+Setting Styles to Links:
+Links can be styled with any CSS property (e.g., color, font-family, background, etc.).
+In addition, links can be styled differently, depending on what state they are in. The following pseudo selectors are available:
+a:link - defines the style for normal unvisited links
+a:visited - defines the style for visited links
+a:active - a link becomes active once you click on it
+a:hover - a link is hovered when the mouse is over it
+a:hover {
+   color: red;
+}
+The overflow Property :
+There are four values for the overflow property: visible (the default value), scroll, hidden, and auto. 
+The value scroll results in clipped overflow, but a scrollbar is added, so the rest of the content
+may be seen.
+
+The CSS: 
+div {
+   width: 150px;
+   height: 150px;
+   background-color: LightBlue;
+   float: left;
+   overflow: scroll;
+}
+
