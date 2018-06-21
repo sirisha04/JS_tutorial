@@ -13,3 +13,25 @@ PS C:\Users\gsirisha\JS_tutorial\about-me-angular> C:\Users\gsirisha\AppData\Roa
 PS C:\Users\gsirisha\JS_tutorial\about-me-angular\simpleApp> C:\Users\gsirisha\AppData\Roaming\npm\ng serve - This will 
 start the service
  or ng serve --open
+
+ Modules:
+ Angular helps to build everything into separate modules to separate each of the functionalities of the application
+ app.module.ts - is the root module class
+
+ import { NgModule }      from '@angular/core'; 
+import { BrowserModule } from '@angular/platform-browser';  
+import { AppComponent }  from './app.component';  
+
+@NgModule ({ 
+   imports:      [ BrowserModule ], 
+   declarations: [ AppComponent ], 
+   bootstrap:    [ AppComponent ] 
+}) 
+export class AppModule { } 
+
+A module is made up of the following parts −
+Bootstrap array − This is used to tell Angular JS which components need to be loaded so that its functionality can be accessed in the application. Once you include the component in the bootstrap array, you need to declare them so that they can be used across other components in the Angular JS application.
+
+Export array − This is used to export components, directives, and pipes which can then be used in other modules.
+
+Import array − Just like the export array, the import array can be used to import the functionality from other Angular JS modules.
