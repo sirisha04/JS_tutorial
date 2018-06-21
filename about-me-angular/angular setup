@@ -35,3 +35,84 @@ Bootstrap array − This is used to tell Angular JS which components need to be 
 Export array − This is used to export components, directives, and pipes which can then be used in other modules.
 
 Import array − Just like the export array, the import array can be used to import the functionality from other Angular JS modules.
+
+Each application consists of Components.
+A component consists of −
+Class − This is like a C++ or Java class which consists of properties and methods.
+Metadata − This is used to decorate the class and extend the functionality of the class.
+Template − This is used to define the HTML view which is displayed in the application.
+import { Component } from '@angular/core';
+
+@Component ({ 
+   selector: 'my-app', 
+   templateUrl: 'app/app.component.html' 
+}) 
+
+export class AppComponent { 
+   appTitle: string = 'Welcome';
+} 
+
+Each application is made up of modules. Each Angular 2 application needs to have one Angular Root Module. 
+Each Angular Root module can then have multiple components to separate the functionality.
+
+Class--
+The class is defined in TypeScript. The class normally has the following syntax in TypeScript.
+Syntax:
+class classname {
+   Propertyname: PropertyType = Value
+}
+Parameters
+Classname − This is the name to be given to the class.
+Propertyname − This is the name to be given to the property.
+PropertyType − Since TypeScript is strongly typed, you need to give a type to the property.
+Value − This is the value to be given to the property.
+Template--
+This is the view which needs to be rendered in the application.
+Syntax:
+Template: '
+   <HTML code>
+   class properties
+'
+Parameters
+HTML Code − This is the HTML code which needs to be rendered in the application.
+Class properties − These are the properties of the class which can be referenced in the template.
+Example
+template: '
+   <div>
+      <h1>{{appTitle}}</h1>
+      <div>To Tutorials Point</div>
+   </div>
+Metadata--
+This is used to decorate Angular JS class with additional information.
+Let’s take a look at the completed code with our class, template, and metadata.
+Example
+import { Component } from '@angular/core';
+
+@Component ({
+   selector: 'my-app',
+   template: ` <div>
+      <h1>{{appTitle}}</h1>
+      <div>To Tutorials Point</div>
+   </div> `,
+})
+
+export class AppComponent {
+   appTitle: string = 'Welcome';
+}
+In the above example, the following things need to be noted −
+We are using the import keyword to import the ‘Component’ decorator from the angular/core module.
+We are then using the decorator to define a component.
+The component has a selector called ‘my-app’. This is nothing but our custom html tag which can be used in our main html page.
+
+We use 'my-app' as a custom html type in the body tag of index.html page.
+
+Template can be defined in two ways:
+1.inline html 
+2.templateUrl
+eg:@Component ({
+   selector: 'my-app',
+   templateUrl: 'app/app.component.html'  
+})
+A directive is a custom HTML element that is used to extend the power of HTML:
+ngif
+ngFor
