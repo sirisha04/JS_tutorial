@@ -1,0 +1,15 @@
+Refer angular.io site as well
+
+
+Run npm i -g @angular/cli@1.5.6 command in the Terminal - This will install(download all the libraries) the 
+angular in our directory
+
+npm start
+
+
+PS C:\Users\gsirisha\JS_tutorial\about-me-angular> C:\Users\gsirisha\AppData\Roaming\npm\ng new simpleApp - This wil create new project
+ in the directory
+
+PS C:\Users\gsirisha\JS_tutorial\about-me-angular\simpleApp> C:\Users\gsirisha\AppData\Roaming\npm\ng serve - This will 
+start the service
+ or ng serve --open
